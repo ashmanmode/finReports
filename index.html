@@ -10,31 +10,34 @@
          <br>
          <h3>Record Transaction</h3>
          <form class="col s12" action="#" onsubmit="record_transaction()">
-               <div class="input-field col s6">
+               <div class="input-field col s12">
                   <p>
                      <label>
-                       <input name="group1" type="radio" checked />
+                       <input name="type" type="radio" checked />
                        <span>Debit</span>
                      </label>
                    </p>
                    <p>
                      <label>
-                       <input name="group1" type="radio" />
+                       <input name="type" type="radio" />
                        <span>Credit</span>
                      </label>
                    </p>
                </div>
-               <div class="input-field col s6">
-                  <input placeholder="Milk and Soda" id="product_sku" type="text" class="validate" required>
-                  <label for="product_sku">For</label>
+               <div class="input-field col s12">
+                  <input placeholder="Milk and Soda" id="for" type="text" class="validate" required>
+                  <label for="for">For</label>
                </div>
-               <div class="input-field col s6">
-                  <input placeholder="HDFC" id="buyer_name" type="text" class="validate" required>
-                  <label for="buyer_name">From</label>
+               <div class="input-field col s12">
+				<select id="from">
+				  <option value="HDFC" selected>HDFC</option>
+				  <option value="ICICI">ICICI</option>
+				</select>
+				<label>From</label>
                </div>
-               <div class="input-field col s6">
-                  <input placeholder="256" id="buyer_email" type="number" class="validate" required>
-                  <label for="buyer_email">Amount</label>
+               <div class="input-field col s12">
+                  <input placeholder="256" id="amount" type="number" class="validate" required>
+                  <label for="amount">Amount</label>
                </div>
                &nbsp;&nbsp;&nbsp;<input id="submit_button" type="submit">
          </form>
