@@ -28,7 +28,6 @@ function record_transaction()
 
         var url_id = '';
 	var url = 'https://cors.io/?https://script.google.com/macros/s/'+url_id+'/exec?';
-	url += 'request_type=single&';
 
 	var send_url = url+'data=' + json;
 	
