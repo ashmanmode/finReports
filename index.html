@@ -9,22 +9,33 @@
       <div class="row">
          <br>
          <h3>Record Transaction</h3>
-         <form class="col s8" action="#" onsubmit="record_transaction()">
+         <form class="col s12" action="#" onsubmit="record_transaction()">
             <div class="row">
                <div class="input-field col s6">
-                  <input placeholder="408-7165907-5149924" id="order_id" type="text" class="validate" required>
+                  <p>
+                     <label>
+                       <input name="group1" type="radio" checked />
+                       <span>Red</span>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       <input name="group1" type="radio" />
+                       <span>Yellow</span>
+                     </label>
+                   </p>
                   <label for="order_id">Type</label>
                </div>
                <div class="input-field col s6">
-                  <input placeholder="P2-J8JB-7A3Q" id="product_sku" type="text" class="validate" required>
+                  <input placeholder="Milk and Soda" id="product_sku" type="text" class="validate" required>
                   <label for="product_sku">For</label>
                </div>
                <div class="input-field col s6">
-                  <input placeholder="Ramesh Pandey" id="buyer_name" type="text" class="validate" required>
+                  <input placeholder="HDFC" id="buyer_name" type="text" class="validate" required>
                   <label for="buyer_name">From</label>
                </div>
                <div class="input-field col s6">
-                  <input placeholder="nsdjfbsbk@dk.com" id="buyer_email" type="text" class="validate" required>
+                  <input placeholder="256" id="buyer_email" type="number" class="validate" required>
                   <label for="buyer_email">Amount</label>
                </div>
                &nbsp;&nbsp;&nbsp;<input id="submit_button" type="submit">
