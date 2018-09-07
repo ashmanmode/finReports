@@ -5,6 +5,17 @@ function record_transaction()
 	var buyer_name = document.getElementById("for").value;
 	var buyer_email = document.getElementById("from").value;
 	var product_sku = document.getElementById("amount").value;
+	
+	// Give values
+	if(order_id=="on")
+		order_id = 'Debit';
+	else
+		order_id = 'Credit';
+	
+	if(buyer_email=="on")
+		buyer_email = 'HDFC';
+	else
+		buyer_email = 'ICICI';
 
 	// Create JSON
 	var json = ''
@@ -12,7 +23,7 @@ function record_transaction()
 	json += '"type":"'+order_id+'",';
 	json += '"for":"'+buyer_name+'",';
 	json += '"from":"'+buyer_email+'",';
-	json += '"amount":"'+product_sku+'",';
+	json += '"amount":"'+product_sku+'"';
 	json += '} ';
 
         var url_id = '';
