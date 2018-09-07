@@ -11,29 +11,28 @@
          <h3>Record Transaction</h3>
          <form class="col s12" action="#" onsubmit="record_transaction()">
                <div class="input-field col s12">
-                  <p>
-                     <label>
-                       <input name="type" type="radio" checked />
-                       <span>Debit</span>
-                     </label>
-                   </p>
-                   <p>
-                     <label>
-                       <input name="type" type="radio" />
-                       <span>Credit</span>
-                     </label>
-                   </p>
+                  <div class="switch">
+					<label>
+					  Debit
+					  <input type="checkbox" id="type">
+					  <span class="lever"></span>
+					  Credit
+					</label>
+				  </div>
+               </div>
+			   <div class="input-field col s12">
+				<div class="switch">
+					<label>
+					  HDFC
+					  <input type="checkbox" id="from">
+					  <span class="lever"></span>
+					  ICICI
+					</label>
+				  </div>
                </div>
                <div class="input-field col s12">
                   <input placeholder="Milk and Soda" id="for" type="text" class="validate" required>
                   <label for="for">For</label>
-               </div>
-               <div class="input-field col s12">
-				<select id="from">
-				  <option value="HDFC" selected>HDFC</option>
-				  <option value="ICICI">ICICI</option>
-				</select>
-				<label>From</label>
                </div>
                <div class="input-field col s12">
                   <input placeholder="256" id="amount" type="number" class="validate" required>
