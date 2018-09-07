@@ -10,21 +10,19 @@
          <br>
          <h3>Record Transaction</h3>
          <form class="col s12" action="#" onsubmit="record_transaction()">
-            <div class="row">
                <div class="input-field col s6">
                   <p>
                      <label>
                        <input name="group1" type="radio" checked />
-                       <span>Red</span>
+                       <span>Debit</span>
                      </label>
                    </p>
                    <p>
                      <label>
                        <input name="group1" type="radio" />
-                       <span>Yellow</span>
+                       <span>Credit</span>
                      </label>
                    </p>
-                  <label for="order_id">Type</label>
                </div>
                <div class="input-field col s6">
                   <input placeholder="Milk and Soda" id="product_sku" type="text" class="validate" required>
@@ -39,7 +37,6 @@
                   <label for="buyer_email">Amount</label>
                </div>
                &nbsp;&nbsp;&nbsp;<input id="submit_button" type="submit">
-             </div>
          </form>
          <h4 id="response"></h4>
          </div>
