@@ -1,21 +1,21 @@
 function record_transaction()
 {
   console.log('itna chala');
-	var order_id = document.getElementById("order_id").value;
-	var buyer_name = document.getElementById("buyer_name").value;
-	var buyer_email = document.getElementById("buyer_email").value;
-	var product_sku = document.getElementById("product_sku").value;
+	var order_id = document.getElementById("type").value;
+	var buyer_name = document.getElementById("for").value;
+	var buyer_email = document.getElementById("from").value;
+	var product_sku = document.getElementById("amount").value;
 
 	// Create JSON
 	var json = ''
 	json += '{';
-	json += '"order_id":"'+order_id+'",';
-	json += '"buyer_name":"'+buyer_name+'",';
-	json += '"buyer_email":"'+buyer_email+'",';
-	json += '"product_sku":"'+product_sku+'",';
+	json += '"type":"'+order_id+'",';
+	json += '"for":"'+buyer_name+'",';
+	json += '"from":"'+buyer_email+'",';
+	json += '"amount":"'+product_sku+'",';
 	json += '} ';
 
-  var url_id = '';
+        var url_id = '';
 	var url = 'https://cors.io/?https://script.google.com/macros/s/'+url_id+'/exec?';
 	url += 'request_type=single&';
 
