@@ -5,6 +5,7 @@ function record_transaction()
 	var buyer_name = document.getElementById("for").value;
 	var buyer_email = document.getElementById("from").value;
 	var product_sku = document.getElementById("amount").value;
+	var lent_to = document.getElementById("lent_to").value;
 	
 	// Give values
 	if(order_id=="on")
@@ -24,9 +25,10 @@ function record_transaction()
 	json += '"for":"'+buyer_name+'",';
 	json += '"from":"'+buyer_email+'",';
 	json += '"amount":"'+product_sku+'"';
+	json += '"lent_to":"'+lent_to+'"';
 	json += '} ';
 
-        var url_id = '';
+        var url_id = 'AKfycbxSvEFwoX4MKnH34fcIsG7ozY1ngISvIMsoxnMbwy7W2QFM9JPH';
 	var url = 'https://cors.io/?https://script.google.com/macros/s/'+url_id+'/exec?';
 
 	var send_url = url+'data=' + json;
