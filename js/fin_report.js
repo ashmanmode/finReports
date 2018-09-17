@@ -11,12 +11,12 @@ function record_transaction()
 	
 	// Give values
 	console.log(order_id);
-	if(order_id==true)
+	if(order_id==false)
 		order_id = 'Debit';
 	else
 		order_id = 'Credit';
 	
-	if(buyer_email==true)
+	if(buyer_email==false)
 		buyer_email = 'HDFC';
 	else
 		buyer_email = 'ICICI';
