@@ -2,7 +2,7 @@ function record_transaction()
 {
   console.log('itna chala');
 	document.getElementById("message").innerHTML = '&nbsp;&nbsp;Processing...';
-	
+	document.getElementById("message").style.color = 'black';
 	var order_id = document.getElementById("type").value;
 	var buyer_name = document.getElementById("for").value;
 	var buyer_email = document.getElementById("from").value;
