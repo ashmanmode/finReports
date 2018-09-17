@@ -10,6 +10,7 @@ function record_transaction()
 	var lent_to = document.getElementById("lent_to").value;
 	
 	// Give values
+	console.log(order_id);
 	if(order_id=="on")
 		order_id = 'Debit';
 	else
