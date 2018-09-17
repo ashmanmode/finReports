@@ -41,11 +41,15 @@ function record_transaction()
         if (status) {
         	console.log('MAIL SENT');
         	toastHTML = '<span>MAIL SENT SUCCESS</span><button class="btn-flat toast-action">OK</button>';
+		document.getElementById("message").innerHTML = '&nbsp;&nbsp;Success';
+                document.getElementById("message").style.color = 'green';
         }
         else
         {
         	console.log('FAILED! Please try again.');
         	toastHTML = '<span>FAIL: Try Again</span><button class="btn-flat toast-action">OK</button>';
+		document.getElementById("message").innerHTML = '&nbsp;&nbsp;Failed';
+                document.getElementById("message").style.color = 'red';
         }
         M.toast({html: toastHTML});
     });
