@@ -24,7 +24,7 @@ function record_transaction()
 	json += '"type":"'+order_id+'",';
 	json += '"for":"'+buyer_name+'",';
 	json += '"from":"'+buyer_email+'",';
-	json += '"amount":"'+product_sku+'"';
+	json += '"amount":"'+product_sku+',"';
 	json += '"lent_to":"'+lent_to+'"';
 	json += '} ';
 
