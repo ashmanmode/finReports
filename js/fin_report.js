@@ -3,20 +3,20 @@ function record_transaction()
   console.log('itna chala');
 	document.getElementById("message").innerHTML = '&nbsp;&nbsp;Processing...';
 	document.getElementById("message").style.color = 'black';
-	var order_id = document.getElementById("type").value;
+	var order_id = document.getElementById("type").checked;
 	var buyer_name = document.getElementById("for").value;
-	var buyer_email = document.getElementById("from").value;
+	var buyer_email = document.getElementById("from").checked;
 	var product_sku = document.getElementById("amount").value;
 	var lent_to = document.getElementById("lent_to").value;
 	
 	// Give values
 	console.log(order_id);
-	if(order_id=="on")
+	if(order_id==true)
 		order_id = 'Debit';
 	else
 		order_id = 'Credit';
 	
-	if(buyer_email=="on")
+	if(buyer_email==true)
 		buyer_email = 'HDFC';
 	else
 		buyer_email = 'ICICI';
