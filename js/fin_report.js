@@ -1,6 +1,8 @@
 function record_transaction()
 {
   console.log('itna chala');
+	document.getElementById("message").innerHTML = '&nbsp;&nbsp;Processing...';
+	
 	var order_id = document.getElementById("type").value;
 	var buyer_name = document.getElementById("for").value;
 	var buyer_email = document.getElementById("from").value;
@@ -24,7 +26,7 @@ function record_transaction()
 	json += '"type":"'+order_id+'",';
 	json += '"for":"'+buyer_name+'",';
 	json += '"from":"'+buyer_email+'",';
-	json += '"amount":"'+product_sku+',"';
+	json += '"amount":"'+product_sku+'",';
 	json += '"lent_to":"'+lent_to+'"';
 	json += '} ';
 
